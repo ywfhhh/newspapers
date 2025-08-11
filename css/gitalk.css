@@ -134,7 +134,7 @@
 }
 
 .markdown-body .pl-corl {
-    text-decoration: underline;
+    text-decoration: ;
     color: #032f62;
 }
 
@@ -221,7 +221,7 @@
 }
 
 .markdown-body a:hover {
-    text-decoration: underline;
+    text-decoration: ;
 }
 
 .markdown-body strong {
@@ -1123,7 +1123,7 @@
     text-decoration: none;
 }
 .gt-container .gt-comment-username:hover {
-    text-decoration: underline;
+    text-decoration: ;
 }
 .gt-container .gt-comment-text {
     margin-left: 0.5em;
