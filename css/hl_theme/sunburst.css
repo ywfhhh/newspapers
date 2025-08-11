@@ -33,7 +33,7 @@
 }
 .hljs-class .hljs-title,
 .hljs-doctag {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .hljs-symbol,
 .hljs-bullet,

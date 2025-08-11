@@ -1372,7 +1372,7 @@
   border-bottom: 1px solid #d1e9ff;
 }
 #post .pjax article a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 #post .pjax article .div_img,
 #post .pjax article figure {
@@ -1581,7 +1581,7 @@
   border-bottom: 1px solid #d1e9ff;
 }
 #post .copyright a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 #post .article_copyright {
   padding: 5px 30px;
@@ -1606,7 +1606,7 @@
   font-family: sans-serif;
 }
 #post .article_copyright a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 html,
 body {
