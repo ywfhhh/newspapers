@@ -176,7 +176,7 @@
 <meta property="og:image" content="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80">
 <meta property="og:image" content="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80">
 <meta property="article:published_time" content="2025-08-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-13T03:52:53.107Z">
+<meta property="article:modified_time" content="2025-08-13T08:19:30.479Z">
 <meta property="article:author" content="Ywfhhh">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80">
@@ -385,129 +385,179 @@
 
 <h3 id="1-Test-Time-Reinforcement-Learning-for-GUI-Grounding-via-Region-Consistency"><a href="#1-Test-Time-Reinforcement-Learning-for-GUI-Grounding-via-Region-Consistency" class="headerlink" title="1. Test-Time Reinforcement Learning for GUI Grounding via Region Consistency"></a>1. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Test-Time_Reinforcement_Learning_for_GUI_Grounding_via_Region_Consistency.pdf">Test-Time Reinforcement Learning for GUI Grounding via Region Consistency</a></h3><p><em>教育背景：</em> Zhejiang University</p>
 <p>该论文提出了GUI-RC（Region Consistency）与GUI-RCPO（Region Consistency Policy Optimization）两种测试时优化方法，用于提升GUI grounding任务（自然语言到界面坐标映射）的准确率。GUI-RC通过多次采样模型输出并空间投票得到一致性区域，无需额外标注即可提升模型定位能力；GUI-RCPO则将区域一致性转化为奖励信号，在测试时进行自监督强化学习训练，使模型在无标注数据上自我优化。实验表明方法在多个主流模型和基准上平均提升2-5%的准确率，并可自举式迭代提升，展现了测试时优化的新潜力。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="2-Discovering-Interpretable-Programmatic-Policies-via-Multimodal-LLM-assisted-Evolutionary-Search"><a href="#2-Discovering-Interpretable-Programmatic-Policies-via-Multimodal-LLM-assisted-Evolutionary-Search" class="headerlink" title="2. Discovering Interpretable Programmatic Policies via Multimodal LLM-assisted Evolutionary Search"></a>2. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Discovering_Interpretable_Programmatic_Policies_via_Multimodal_LLM-assisted_Evolutionary_Search.pdf">Discovering Interpretable Programmatic Policies via Multimodal LLM-assisted Evolutionary Search</a></h3><p><em>教育背景：</em> City University of Hong Kong</p>
 <p>本文提出了一种新的可解释程序化策略发现方法——多模态大语言模型辅助进化搜索（MLES），该方法将多模态大语言模型（MLLMs）与进化优化结合，直接生成带有自然语言解释的程序化策略。MLES在进化过程中融合了视觉反馈驱动的行为分析，有效提升了策略发现效率和可解释性。实验证明，MLES在Lunar Lander和Car Racing两个典型控制任务上，策略性能与PPO相当，并显著提升了策略的透明度和知识可复用性，为下一代可解释策略发现提供了新范式。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="3-ECHO-Decoupling-Inference-and-Training-for-Large-Scale-RL-Alignment-on-Heterogeneous-Swarms"><a href="#3-ECHO-Decoupling-Inference-and-Training-for-Large-Scale-RL-Alignment-on-Heterogeneous-Swarms" class="headerlink" title="3. ECHO: Decoupling Inference and Training for Large-Scale RL Alignment on Heterogeneous Swarms"></a>3. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Echo__Decoupling_Inference_and_Training_for_Large-Scale_RL_Alignment_on_Heterogeneous_Swarms.pdf">ECHO: Decoupling Inference and Training for Large-Scale RL Alignment on Heterogeneous Swarms</a></h3><p><em>教育背景：</em> Gradient</p>
 <p>本文提出了ECHO系统，通过将RL中的推理（trajectory sampling）和训练（policy optimization）在异构集群上彻底解耦，设计了顺序拉取和异步推送两种轻量级同步协议，实现了在边缘设备和数据中心硬件之间灵活协作。实验表明，ECHO在Qwen系列大模型上的RL任务中，既能提升硬件利用率，也能与传统全同位系统在收敛速度和最终性能持平甚至超越，验证了去中心化RL训练的可行性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="4-Posterior-GRPO-Rewarding-Reasoning-Processes-in-Code-Generation"><a href="#4-Posterior-GRPO-Rewarding-Reasoning-Processes-in-Code-Generation" class="headerlink" title="4. Posterior-GRPO: Rewarding Reasoning Processes in Code Generation"></a>4. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Posterior-GRPO__Rewarding_Reasoning_Processes_in_Code_Generation.pdf">Posterior-GRPO: Rewarding Reasoning Processes in Code Generation</a></h3><p><em>教育背景：</em> The State Key Laboratory of Blockchain and Data Security</p>
 <p>本论文提出了一种新的强化学习方法Posterior-GRPO (P-GRPO)用于大语言模型代码生成，创新性地将基于优化-降级（OD-based）方法训练的思维奖励模型与传统结果奖励结合，通过在仅有正确结果时赋予思维奖励，有效防止奖励投机。实验证明，P-GRPO在多个代码与数学推理基准上提升Pass@1平均4.5%，表现与GPT-4-Turbo相当，且泛化能力强。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="5-Domain-driven-Metrics-for-Reinforcement-Learning-A-Case-Study-on-Epidemic-Control-using-Agent-based-Simulation"><a href="#5-Domain-driven-Metrics-for-Reinforcement-Learning-A-Case-Study-on-Epidemic-Control-using-Agent-based-Simulation" class="headerlink" title="5. Domain-driven Metrics for Reinforcement Learning: A Case Study on Epidemic Control using Agent-based Simulation"></a>5. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Domain-driven_Metrics_for_Reinforcement_Learning__A_Case_Study_on_Epidemic_Control_using_Agent-based.pdf">Domain-driven Metrics for Reinforcement Learning: A Case Study on Epidemic Control using Agent-based Simulation</a></h3><p><em>教育背景：</em> Thoughtworks Technologies</p>
-<p>本文提出了结合领域知识和传统奖励的‘Domain-driven RL metrics’评价指标体系，用于公正、稳健地比较用于理性体建模与优化的强化学习算法。通过在疫情控制的代理建模案例中，利用多种RL算法和新的复合评价指标（如状态空间覆盖、最佳序列百分比等），有效提升了算法选择的可靠性和解释性，结论显示新指标体系比单一均值奖励更稳健、更具信任度。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<p>本文提出了结合领域知识和传统奖励的’Domain-driven RL metrics’评价指标体系，用于公正、稳健地比较用于理性体建模与优化的强化学习算法。通过在疫情控制的代理建模案例中，利用多种RL算法和新的复合评价指标（如状态空间覆盖、最佳序列百分比等），有效提升了算法选择的可靠性和解释性，结论显示新指标体系比单一均值奖励更稳健、更具信任度。</p>
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="6-Towards-Hallucination-Free-Music-A-Reinforcement-Learning-Preference-Optimization-Framework-for-Reliable-Song-Generation"><a href="#6-Towards-Hallucination-Free-Music-A-Reinforcement-Learning-Preference-Optimization-Framework-for-Reliable-Song-Generation" class="headerlink" title="6. Towards Hallucination-Free Music: A Reinforcement Learning Preference Optimization Framework for Reliable Song Generation"></a>6. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Towards_Hallucination-Free_Music__A_Reinforcement_Learning_Preference_Optimization_Framework_for_Rel.pdf">Towards Hallucination-Free Music: A Reinforcement Learning Preference Optimization Framework for Reliable Song Generation</a></h3><p><em>教育背景：</em> Wuhan University</p>
 <p>本论文提出了一个基于强化学习的偏好优化框架，用于减少歌词到歌曲生成过程中的幻觉现象（即生成内容与歌词不符）。方法包括构建基于音素错误率（PER）的幻觉偏好数据集，并实现三种RL偏好优化策略：DPO、PPO和GRPO，通过奖励建模和对比学习，有效抑制了幻觉的发生。实验表明，该框架能显著降低幻觉比例（如DPO+RS方法幻觉样本下降16.5%，高质量样本提升38.47%），且不损失音乐性和音质，具备良好迁移性，可扩展到风格控制等其他生成任务。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="7-Anti-Jamming-Sensing-with-Distributed-Reconfigurable-Intelligent-Metasurface-Antennas"><a href="#7-Anti-Jamming-Sensing-with-Distributed-Reconfigurable-Intelligent-Metasurface-Antennas" class="headerlink" title="7. Anti-Jamming Sensing with Distributed Reconfigurable Intelligent Metasurface Antennas"></a>7. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Anti-Jamming_Sensing_with_Distributed_Reconfigurable_Intelligent_Metasurface_Antennas.pdf">Anti-Jamming Sensing with Distributed Reconfigurable Intelligent Metasurface Antennas</a></h3><p><em>教育背景：</em> Xi’an Jiaotong University</p>
 <p>本文提出利用分布式可重构智能超表面天线（RIMSA）进行射频感知，通过策略网络（深度强化学习）优化波束形成模式及神经网络映射接收信号，实现端到端感知。为抵抗干扰，设计了融合接收信号SINR的多因子损失函数，显著提升了抗干扰下的感知精度，仿真表明分布式RIMSA系统对环境及攻击有更强适应性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h2 id="robot">Robotics</h2>
 
 <h3 id="8-Genie-Envisioner-A-Unified-World-Foundation-Platform-for-Robotic-Manipulation"><a href="#8-Genie-Envisioner-A-Unified-World-Foundation-Platform-for-Robotic-Manipulation" class="headerlink" title="8. Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation"></a>8. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Genie_Envisioner__A_Unified_World_Foundation_Platform_for_Robotic_Manipulation.pdf">Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation</a></h3><p><em>教育背景：</em> AgiBot Genie Team</p>
 <p>该论文提出Genie Envisioner (GE)，一个集视频生成、策略学习、评估和仿真于一体的机器人操作世界基础平台。GE包括三大模块：GE-Base为大规模指令条件视频扩散模型，捕捉真实机器人交互的空间、时间和语义动态；GE-Act通过轻量化解码器将视觉表征映射为可执行动作轨迹，实现多平台泛化和高效策略推断；GE-Sim为动作条件神经模拟器，支持高保真闭环策略评估与并行仿真。平台还配备EWMBench标准化评测工具，综合衡量视觉真实度、物理一致性和指令-动作对齐。实验证明GE在多种机器人平台和复杂任务上均优于现有方法，具备极强的通用性和可扩展性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="9-TRAJEVO-Trajectory-Prediction-Heuristics-Design-via-LLM-driven-Evolution"><a href="#9-TRAJEVO-Trajectory-Prediction-Heuristics-Design-via-LLM-driven-Evolution" class="headerlink" title="9. TRAJEVO: Trajectory Prediction Heuristics Design via LLM-driven Evolution"></a>9. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/TrajEvo__Trajectory_Prediction_Heuristics_Design_via_LLM-driven_Evolution.pdf">TRAJEVO: Trajectory Prediction Heuristics Design via LLM-driven Evolution</a></h3><p><em>教育背景：</em> KAIST, Korea Advanced Institute of Science and Technology</p>
 <p>该论文提出TRAJEVO框架，通过结合大语言模型（LLM）与进化算法自动生成和优化轨迹预测启发式方法，利用Cross-Generation Elite Sampling和Statistics Feedback Loop增强启发式多样性与性能。实验结果显示，TRAJEVO在多数据集上超越传统启发式方法，并且在未见分布场景下的泛化能力优于深度学习模型，同时具备高速度和可解释性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="10-OMNIEAR-Benchmarking-Agent-Reasoning-in-Embodied-Tasks"><a href="#10-OMNIEAR-Benchmarking-Agent-Reasoning-in-Embodied-Tasks" class="headerlink" title="10. OMNIEAR: Benchmarking Agent Reasoning in Embodied Tasks"></a>10. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/OmniEAR__Benchmarking_Agent_Reasoning_in_Embodied_Tasks.pdf">OMNIEAR: Benchmarking Agent Reasoning in Embodied Tasks</a></h3><p><em>教育背景：</em> Zhejiang University</p>
 <p>OmniEAR提出了一个用于评估大语言模型在具身任务中推理能力的综合框架，包括EAR-Sim环境建模、自动化场景生成和EAR-Bench系统性评测，覆盖物理属性推理、工具使用与多智能体协作。结论显示：现有语言模型在需要从物理约束推理时性能严重下降，特别是在工具推理和隐式协作任务中，表明具身推理对AI架构提出了新的挑战。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="11-CleanUpBench-Embodied-Sweeping-and-Grasping-Benchmark"><a href="#11-CleanUpBench-Embodied-Sweeping-and-Grasping-Benchmark" class="headerlink" title="11. CleanUpBench: Embodied Sweeping and Grasping Benchmark"></a>11. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/CleanUpBench__Embodied_Sweeping_and_Grasping_Benchmark.pdf">CleanUpBench: Embodied Sweeping and Grasping Benchmark</a></h3><p><em>教育背景：</em> Sichuan University</p>
 <p>本文提出了CleanUpBench，一个面向现实家居环境中服务机器人双模态（扫地与抓取）清洁任务的高保真仿真基准。平台基于NVIDIA Isaac Sim，支持多场景、多机器人协作，并提供系统化评测指标（空间覆盖、任务完成率、运动质量、计算效率等），并内置多种启发式、规划与学习基线方法。实验表明，具备多智能体强化学习能力的双模态算法（如PRIMAL2）在复杂清洁任务中显著优于仅具备单一模式的传统方法，验证了CleanUpBench作为评测和推动现实服务机器人智能发展的价值和扩展性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="12-Towards-Generalizable-Safety-in-Crowd-Navigation-via-Conformal-Uncertainty-Handling"><a href="#12-Towards-Generalizable-Safety-in-Crowd-Navigation-via-Conformal-Uncertainty-Handling" class="headerlink" title="12. Towards Generalizable Safety in Crowd Navigation via Conformal Uncertainty Handling"></a>12. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Towards_Generalizable_Safety_in_Crowd_Navigation_via_Conformal_Uncertainty_Handling.pdf">Towards Generalizable Safety in Crowd Navigation via Conformal Uncertainty Handling</a></h3><p><em>教育背景：</em> University of California, Riverside</p>
 <p>本文提出了一种结合自适应保形不确定性量化(ACI)与约束强化学习(CRL)的移动机器人群体导航方法。方法流程为：首先通过规则或学习式轨迹预测模型估算人类未来轨迹，并用ACI在线量化预测不确定性，将不确定性估计作为观察输入，结合注意力机制编码人与机器人及人-人交互，最后用CRL约束机器人决策以减少对人类未来轨迹的不安全侵入。实验结果显示，在分布内及三种分布外场景（速度变化、行为策略变化、群体动态）中，该方法安全性和成功率均显著优于现有SOTA基线，且能够直接迁移到实际机器人平台实现安全稳健导航。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="13-A-Multi-view-Landmark-Representation-Approach-with-Application-to-GNSS-Visual-Inertial-Odometry"><a href="#13-A-Multi-view-Landmark-Representation-Approach-with-Application-to-GNSS-Visual-Inertial-Odometry" class="headerlink" title="13. A Multi-view Landmark Representation Approach with Application to GNSS-Visual-Inertial Odometry"></a>13. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/A_Multi-view_Landmark_Representation_Approach_with_Application_to_GNSS-Visual-Inertial_Odometry.pdf">A Multi-view Landmark Representation Approach with Application to GNSS-Visual-Inertial Odometry</a></h3><p><em>教育背景：</em> Shanghai Jiao Tong University</p>
 <p>本文提出了一种多视角的仅位姿特征点表示方法，并将其应用于GNSS-视觉-惯性里程计（GVIO）系统，核心技术包括多视角几何特征建模、滤波更新与特征管理策略。实验表明该方法在仿真和真实环境中提升了定位效率和精度，保持滤波一致性且计算负担更低。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="14-Information-Theoretic-Graph-Fusion-with-Vision-Language-Action-Model-for-Policy-Reasoning-and-Dual-Robotic-Control"><a href="#14-Information-Theoretic-Graph-Fusion-with-Vision-Language-Action-Model-for-Policy-Reasoning-and-Dual-Robotic-Control" class="headerlink" title="14. Information-Theoretic Graph Fusion with Vision-Language-Action Model for Policy Reasoning and Dual Robotic Control"></a>14. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Information-Theoretic_Graph_Fusion_with_Vision-Language-Action_Model_for_Policy_Reasoning_and_Dual_R.pdf">Information-Theoretic Graph Fusion with Vision-Language-Action Model for Policy Reasoning and Dual Robotic Control</a></h3><p><em>教育背景：</em> Hangzhou Dianzi University</p>
 <p>本文提出了一种信息论图融合视觉-语言-动作（GF-VLA）框架，通过从人类演示视频中提取基于Shannon信息的手-物体和物体-物体交互，构建时序场景图，并与语言条件Transformer结合，生成可解释的行为树和笛卡尔动作指令。通过链式推理（CoT）、自验证和跨手选择策略实现双臂机器人任务推理与高效协作，实验在多种装配和泛化任务中取得了高于95%图准确率和90%任务成功率，展现了优异的泛化与稳健性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="15-DistillDrive-End-to-End-Multi-Mode-Autonomous-Driving-Distillation-by-Isomorphic-Hetero-Source-Planning-Model"><a href="#15-DistillDrive-End-to-End-Multi-Mode-Autonomous-Driving-Distillation-by-Isomorphic-Hetero-Source-Planning-Model" class="headerlink" title="15. DistillDrive: End-to-End Multi-Mode Autonomous Driving Distillation by Isomorphic Hetero-Source Planning Model"></a>15. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/DistillDrive__End-to-End_Multi-Mode_Autonomous_Driving_Distillation_by_Isomorphic_Hetero-Source_Plan.pdf">DistillDrive: End-to-End Multi-Mode Autonomous Driving Distillation by Isomorphic Hetero-Source Planning Model</a></h3><p><em>教育背景：</em> East China University of Science and Technology</p>
 <p>该论文提出DistillDrive，一种结合知识蒸馏、强化学习和生成模型的端到端多模态自动驾驶框架。方法以结构化场景规划模型为教师，通过多模实例监督提升学生模型的运动特征学习，并引入强化学习优化状态-决策映射，利用生成模型实现运动分布特征的隐空间交互。实验结果显示，DistillDrive在nuScenes和NAVSIM数据集上较基线模型碰撞率下降50%，闭环性能提升3分，有效增强了自动驾驶计划的多样性和安全性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="16-Towards-Embodied-Agentic-AI-Review-and-Classification-of-LLM-and-VLM-Driven-Robot-Autonomy-and-Interaction"><a href="#16-Towards-Embodied-Agentic-AI-Review-and-Classification-of-LLM-and-VLM-Driven-Robot-Autonomy-and-Interaction" class="headerlink" title="16. Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction"></a>16. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Towards_Embodied_Agentic_AI__Review_and_Classification_of_LLM-_and_VLM-Driven_Robot_Autonomy_and_Int.pdf">Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction</a></h3><p><em>教育背景：</em> University of Turku</p>
 <p>该论文综述了大语言模型（LLM）和视觉语言模型（VLM）在机器人自主性和人机交互中的集成方法，提出了四类集成范式（协议、接口、编排和嵌入）及多种智能体角色的分类体系。结论认为，Agentic AI系统作为用户与机器人间的智能中介，提升了机器人灵活性和可扩展性，并展望了未来在实际部署、记忆、安全性和高阶智能等方面的研究挑战。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="17-Driver-Assistant-Persuading-Drivers-to-Adjust-Secondary-Tasks-Using-Large-Language-Models"><a href="#17-Driver-Assistant-Persuading-Drivers-to-Adjust-Secondary-Tasks-Using-Large-Language-Models" class="headerlink" title="17. Driver Assistant: Persuading Drivers to Adjust Secondary Tasks Using Large Language Models"></a>17. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Driver_Assistant__Persuading_Drivers_to_Adjust_Secondary_Tasks_Using_Large_Language_Models.pdf">Driver Assistant: Persuading Drivers to Adjust Secondary Tasks Using Large Language Models</a></h3><p><em>教育背景：</em> Zhejiang University</p>
 <p>本文提出一种基于大语言模型（LLM）的驾驶辅助工具，通过道路风险评估与眼动追踪及时判断并生成人性化劝导内容，引导驾驶员在L3自动驾驶中合理分配注意力。实验结果显示，该系统能够有效降低驾驶员分心任务数量和认知负荷，提升驾驶安全性及体验。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="18-EndoMatcher-Generalizable-Endoscopic-Image-Matcher-via-Multi-Domain-Pre-training-for-Robot-Assisted-Surgery"><a href="#18-EndoMatcher-Generalizable-Endoscopic-Image-Matcher-via-Multi-Domain-Pre-training-for-Robot-Assisted-Surgery" class="headerlink" title="18. EndoMatcher: Generalizable Endoscopic Image Matcher via Multi-Domain Pre-training for Robot-Assisted Surgery"></a>18. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/EndoMatcher__Generalizable_Endoscopic_Image_Matcher_via_Multi-Domain_Pre-training_for_Robot-Assisted.pdf">EndoMatcher: Generalizable Endoscopic Image Matcher via Multi-Domain Pre-training for Robot-Assisted Surgery</a></h3><p><em>教育背景：</em> Institute of Automation, Chinese Academy of Sciences</p>
 <p>该论文提出了EndoMatcher，一种基于双分支Vision Transformer的通用内镜图像匹配网络，通过多域大规模数据集Endo-Mix6的预训练和渐进式多目标优化实现对弱纹理、视角大变化等挑战场景下的鲁棒密集匹配。结果显示，EndoMatcher在多个零样本内镜数据集上大幅提升匹配数量和精度，实现了跨器官和成像条件的高效泛化。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="19-GhostShell-Streaming-LLM-Function-Calls-for-Concurrent-Embodied-Programming"><a href="#19-GhostShell-Streaming-LLM-Function-Calls-for-Concurrent-Embodied-Programming" class="headerlink" title="19. GhostShell: Streaming LLM Function Calls for Concurrent Embodied Programming"></a>19. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/GhostShell__Streaming_LLM_Function_Calls_for_Concurrent_Embodied_Programming.pdf">GhostShell: Streaming LLM Function Calls for Concurrent Embodied Programming</a></h3><p><em>教育背景：</em> Leapwatt Robotics</p>
 <p>本文提出GhostShell，一种利用大语言模型（LLM）实现机器人多通道并发行为编程的系统，核心包括流式XML函数令牌解析、动态接口映射和多通道同步&#x2F;异步调度，支持机器人各部件的并行与串行指令执行。实验在COCO机器人上，通过34项任务验证方法有效性，在Claude-4-Sonnet模型上达到0.85的行为正确率，响应速度比传统函数调用快66倍，适用于长时多模态任务，展现出高度通用性和实时性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="20-Advanced-Hybrid-Transformer–LSTM-Technique-with-Attention-and-TS-Mixer-for-Drilling-Rate-of-Penetration-Prediction"><a href="#20-Advanced-Hybrid-Transformer–LSTM-Technique-with-Attention-and-TS-Mixer-for-Drilling-Rate-of-Penetration-Prediction" class="headerlink" title="20. Advanced Hybrid Transformer–LSTM Technique with Attention and TS-Mixer for Drilling Rate of Penetration Prediction"></a>20. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Advanced_Hybrid_Transformer_LSTM_Technique_with_Attention_and_TS_Mixer_for_Drilling_Rate_of_Penetrat.pdf">Advanced Hybrid Transformer–LSTM Technique with Attention and TS-Mixer for Drilling Rate of Penetration Prediction</a></h3><p><em>教育背景：</em> University of Engineering and Applied Sciences (UEAS), Swat, Pakistan</p>
 <p>该论文提出一种结合LSTM、Transformer编码器、TS-Mixer模块和注意力机制的混合深度学习架构，用于钻井穿透率（ROP）预测。方法包括数据清洗、特征标准化、架构设计（LSTM捕捉时序依赖，Transformer建模全局关系，TS-Mixer融合静态特征，注意力机制动态分配特征权重），并在真实钻井数据集上进行评估。结果显示，所提模型在多项回归指标上显著优于传统方法，R²达0.9991，MAPE低至1.1572%，具备强泛化能力和实时预测价值。结论是该混合模型能稳定并精确预测ROP，显著提升钻井优化系统的智能化与经济性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="21-Learning-to-See-and-Act-Task-Aware-View-Planning-for-Robotic-Manipulation"><a href="#21-Learning-to-See-and-Act-Task-Aware-View-Planning-for-Robotic-Manipulation" class="headerlink" title="21. Learning to See and Act: Task-Aware View Planning for Robotic Manipulation"></a>21. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Learning_to_See_and_Act__Task-Aware_View_Planning_for_Robotic_Manipulation.pdf">Learning to See and Act: Task-Aware View Planning for Robotic Manipulation</a></h3><p><em>教育背景：</em> School of Computer Science and Engineering, Sun Yat-sen University</p>
 <p>本文提出了Task-Aware View Planning (TAVP) 框架，将主动多视角探索与任务感知特征提取相结合，提升机器人多任务操作的鲁棒性与泛化能力。通过多视角探索策略和任务感知专家混合（TaskMoE）视觉编码器，TAVP显著提升了在RLBench等多任务操作环境中的准确率和鲁棒性，能有效克服遮挡问题并提升对新任务的泛化能力。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="22-PhysPatch-A-Physically-Realizable-and-Transferable-Adversarial-Patch-Attack-for-Multimodal-Large-Language-Models-based-Autonomous-Driving-Systems"><a href="#22-PhysPatch-A-Physically-Realizable-and-Transferable-Adversarial-Patch-Attack-for-Multimodal-Large-Language-Models-based-Autonomous-Driving-Systems" class="headerlink" title="22. PhysPatch: A Physically Realizable and Transferable Adversarial Patch Attack for Multimodal Large Language Models-based Autonomous Driving Systems"></a>22. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/PhysPatch__A_Physically_Realizable_and_Transferable_Adversarial_Patch_Attack_for_Multimodal_Large_La.pdf">PhysPatch: A Physically Realizable and Transferable Adversarial Patch Attack for Multimodal Large Language Models-based Autonomous Driving Systems</a></h3><p><em>教育背景：</em> School of Software Engineering, Xi’an Jiaotong University</p>
 <p>本文提出PhysPatch，一种针对多模态大语言模型(MLLMs)驱动的自动驾驶系统的物理可实现且高迁移性对抗补丁攻击框架。方法上，PhysPatch通过语义感知的掩码初始化、SVD分解的局部特征对齐损失以及补丁引导的裁剪-缩放策略，实现了补丁位置、形状和内容的联合优化，并采用自适应势场掩码细化提升物理可部署性。实验证明，PhysPatch在多种开源、商用和推理型MLLMs上均大幅优于现有方法，能有效误导自动驾驶系统感知与规划输出，并兼具高物理可部署性与对抗性。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="23-Examining-the-legibility-of-humanoid-robot-arm-movements-in-a-pointing-task"><a href="#23-Examining-the-legibility-of-humanoid-robot-arm-movements-in-a-pointing-task" class="headerlink" title="23. Examining the legibility of humanoid robot arm movements in a pointing task"></a>23. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Examining_the_legibility_of_humanoid_robot_arm_movements_in_a_pointing_task.pdf">Examining the legibility of humanoid robot arm movements in a pointing task</a></h3><p><em>教育背景：</em> Comenius University Bratislava</p>
 <p>该论文设计了基于NICO仿人机器人，结合凝视与指向手势的实验，考察人在观察截断机器人手臂运动时对目标预测的准确性和反应速度。结果支持多模态优势和眼动优先假设，表明凝视和指向的组合能显著提高意图识别的准确性，凝视信号可加速人类决策，为人机交互中运动设计提供理论依据。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="24-A-Study-of-the-Framework-and-Real-World-Applications-of-Language-Embedding-for-3D-Scene-Understanding"><a href="#24-A-Study-of-the-Framework-and-Real-World-Applications-of-Language-Embedding-for-3D-Scene-Understanding" class="headerlink" title="24. A Study of the Framework and Real-World Applications of Language Embedding for 3D Scene Understanding"></a>24. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/A_Study_of_the_Framework_and_Real-World_Applications_of_Language_Embedding_for_3D_Scene_Understandin.pdf">A Study of the Framework and Real-World Applications of Language Embedding for 3D Scene Understanding</a></h3><p><em>教育背景：</em> University of Victoria</p>
 <p>本论文系统综述了将大语言模型（LLMs）及语言嵌入与3D高斯投影（Gaussian Splatting, 3DGS）结合以实现三维场景理解的方法和应用。其方法梳理了3DGS的理论基础、语言特征与视觉模型的集成策略，以及在机器人、虚拟现实、自动驾驶等真实环境中的应用实例。结论指出，尽管这些技术推动了3D场景的语义理解和机器人智能交互，但仍面临计算消耗高、语义泛化能力有限及实时交互工具不足等挑战，未来需在高效可扩展和跨场景泛化等方面持续突破。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="25-Will-You-Be-Aware-Eye-Tracking–Based-Modeling-of-Situational-Awareness-in-Augmented-Reality"><a href="#25-Will-You-Be-Aware-Eye-Tracking–Based-Modeling-of-Situational-Awareness-in-Augmented-Reality" class="headerlink" title="25. Will You Be Aware? Eye Tracking–Based Modeling of Situational Awareness in Augmented Reality"></a>25. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/Will_You_Be_Aware__Eye_Tracking-Based_Modeling_of_Situational_Awareness_in_Augmented_Reality.pdf">Will You Be Aware? Eye Tracking–Based Modeling of Situational Awareness in Augmented Reality</a></h3><p><em>教育背景：</em> Duke University</p>
 <p>该论文提出了一种基于眼动追踪的情境意识（SA）建模方法，针对AR辅助心肺复苏（CPR）任务，开发了实时指导的AR应用并通过模拟突发事件收集用户眼动数据。提出了FixGraphPool图神经网络，将注视点和扫视事件结构化为时空图，实现了对用户SA水平的预测，准确率达83%，优于传统机器学习和先进时序模型。结论显示眼动追踪可有效建模AR环境下的SA，并为安全关键场景的AR系统设计提供了指导。</p>
-<img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" />
+<div style="text-align: center;">
+  <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=600&q=80" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
+</div>
 
 <hr>
 <h3 id="26-From-Canada-to-Japan-How-10-000-km-Affect-User-Perception-in-Robot-Teleoperation"><a href="#26-From-Canada-to-Japan-How-10-000-km-Affect-User-Perception-in-Robot-Teleoperation" class="headerlink" title="26. From Canada to Japan: How 10,000 km Affect User Perception in Robot Teleoperation"></a>26. <a target="_blank" rel="noopener" href="http://172.16.18.71:5000/pdfs/papers_auto_crawl/2025/2025-08/2025-08-08/From_Canada_to_Japan__How_10,000_km_Affect_User_Perception_in_Robot_Teleoperation.pdf">From Canada to Japan: How 10,000 km Affect User Perception in Robot Teleoperation</a></h3><p><em>教育背景：</em> Tokyo University of Science</p>
