@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/ywfhhh/ywfhhh.picture/refs/heads/main/2024-01-01/Multivehicle%20Perimeter%20Defense%20in%20Conical%20Environments.jpg">
 <meta property="og:image" content="https://raw.githubusercontent.com/ywfhhh/ywfhhh.picture/refs/heads/main/2024-01-01/Fast%20Contact-Implicit%20Model%20Predictive%20Control.jpg">
 <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-<meta property="article:modified_time" content="2025-08-18T09:51:58.281Z">
+<meta property="article:modified_time" content="2025-08-18T10:01:48.384Z">
 <meta property="article:author" content="Ywfhhh">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/ywfhhh/ywfhhh.picture/refs/heads/main/2024-01-01/Uni-Fusion%3A%20Universal%20Continuous%20Mapping.jpg">
@@ -181,7 +181,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          598 字
+          522 字
         
       </span>
     
@@ -251,7 +251,7 @@
     font-style: italic !important;     /* 斜体 */
     font-weight: bold !important;      /* 加粗 */
 ">Julius-Maximilians-University of Würzburg</span></p>
-<p>该论文提出了Uni-Fusion，一种无需训练即可实现表面、表面属性（如颜色、红外、风格等）及高维特征（如CLIP嵌入）连续映射的通用框架。方法基于高效的高斯过程回归（GPR）核函数近似，将点云分割为体素并提取局部潜在特征，支持属性和几何的统一增量重建、2D到3D属性转移、开放词汇场景理解等多种机器人感知任务。实验证明Uni-Fusion在多场景下精度高、通用性强，且实时性能优异，支持多模态环境建图和理解。</p>
+<p>该论文提出了Uni-Fusion，一种无需训练的通用连续映射框架，能够对几何、表面属性（如颜色、红外）及高维特征（如CLIP嵌入）进行隐式编码。方法通过高效的高斯过程回归（GPR）和稀疏体素，将点云数据分割为网格体素并生成局部隐式特征图（LIM），逐步融合为全局三维重建，支持表面重建、属性转移和开放词汇场景理解。实验证明Uni-Fusion能在多种机器人感知任务中实现高效且高质量的连续映射，并在表面和颜色重建、语义理解等应用中达到或优于现有方法的性能。</p>
 <img src="https://raw.githubusercontent.com/ywfhhh/ywfhhh.picture/refs/heads/main/2024-01-01/Uni-Fusion%3A%20Universal%20Continuous%20Mapping.jpg" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
 
 <hr>
@@ -265,8 +265,8 @@
     display: inline-block !important; 
     font-style: italic !important;     /* 斜体 */
     font-weight: bold !important;      /* 加粗 */
-">Purdue University</span></p>
-<p>本文提出了多车协同防御算法，用于在锥形环境中防御周边免受任意数量和时刻移动入侵者的威胁。通过竞争性分析方法，设计并分析了三种去中心化和两种合作型在线算法，给出了算法在不同参数下的竞争比界，并展示了参数空间下各算法的性能对比。结论表明，所提出的算法在不同参数条件下可保证有限竞争比，能有效提升防御能力，且算法选择可根据实际需求灵活调整。</p>
+">Michigan State University</span></p>
+<p>本文提出了多车协同防御锥形环境周界的在线算法，通过竞争分析框架，设计并分析了三种分散式和两种协作式算法，分别在不同参数条件下获得了明确的竞争比界（1、1.5、2等）。结论表明：分散式与协作式算法可根据车辆数量、入侵者速度等参数选择，均可在最坏情况下有效拦截入侵者，实现防御性能的理论保障。</p>
 <img src="https://raw.githubusercontent.com/ywfhhh/ywfhhh.picture/refs/heads/main/2024-01-01/Multivehicle%20Perimeter%20Defense%20in%20Conical%20Environments.jpg" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
 
 <hr>
@@ -281,7 +281,7 @@
     font-style: italic !important;     /* 斜体 */
     font-weight: bold !important;      /* 加粗 */
 ">Stanford University</span></p>
-<p>本文提出了一种用于机器人与环境发生接触&#x2F;分离时的通用控制方法，称为Contact-Implicit Model Predictive Control（CI-MPC）。方法核心为将线性MPC推广至复杂接触动力学，通过双层规划结构：下层采用基于参考轨迹的线性互补问题（LCP）近似接触动力学并用自定义内点法快速求解，上层进行轨迹优化，同时利用隐式微分实现高效梯度计算。实验在多种机器人（如推杆、跳跃机器人、四足、双足机器人）仿真和实际硬件（Unitree Go1）上，展示了算法在动态环境下生成新接触序列、在线规划及对模型不匹配和外部扰动的鲁棒性。结论表明，CI-MPC能在保证实时性的同时，实现对多种动态接触任务的鲁棒控制，但仍需在参考轨迹生成和复杂动力学近似等方面进一步研究。</p>
+<p>本论文提出了一种适用于与环境发生接触和断开接触的机器人系统的通用控制方法——接触隐式模型预测控制（CI-MPC）。该方法通过双层优化，将下层接触动力学建模为时变线性互补问题，并采用自定义结构化内点法求解实现高效可微分的接触动力学计算；上层则快速优化轨迹。论文在多种机器人系统（仿真与硬件）中验证了CI-MPC能够在存在模型失配和外部扰动的情况下，实时生成并跟踪非周期接触序列，表现出良好的鲁棒性和实时性。</p>
 <img src="https://raw.githubusercontent.com/ywfhhh/ywfhhh.picture/refs/heads/main/2024-01-01/Fast%20Contact-Implicit%20Model%20Predictive%20Control.jpg" srcset="/img/loading.gif" lazyload alt="论文配图" width="300px" style="display: block; margin: 0 auto;" />
 
 <hr>
