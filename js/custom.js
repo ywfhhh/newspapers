@@ -1,5 +1,5 @@
 // 定义 JavaScript 脚本
-function download(url) {
+function downloadPDF(url) {
     // 检查 URL 是否有效
     if (!url) {
         console.error('下载 URL 无效');
